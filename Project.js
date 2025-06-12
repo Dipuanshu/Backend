@@ -9,6 +9,11 @@ app.use(express.json()); // json ko samjhne k liye //
 require("./ProjectDb/config");
 const projectModel = require("./ProjectDb/userModel");
 
+// ✅ Home Page Route (Add this part)
+app.get("/", (req, res) => {
+  res.send("Welcome! Your API is working successfully 🚀");
+});
+
 // Express route to receive data
 app.post("/saved", async (req, res) => {
   const { userName, email, query, userId } = req.body;
@@ -63,7 +68,7 @@ app.put("/updateReply/:id", async (req, res) => {
   res.send(result);
 });
 
-// Use process.env.PORT for Railway compatibility
+// Use process.env.PORT for Render/Railway compatibility
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
