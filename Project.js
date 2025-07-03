@@ -5,7 +5,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 app.use(express.json()); // json ko samjhne k liye //
-
 require("./ProjectDb/config");
 const projectModel = require("./ProjectDb/userModel");
 

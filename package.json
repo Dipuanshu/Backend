@@ -2,20 +2,22 @@
   "name": "node",
   "version": "1.0.0",
   "description": "a node js tutorial",
-  "main": "index.js",
+  "main": "Project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Project.js"
   },
   "author": "deepujoshi",
   "license": "ISC",
   "dependencies": {
+    "cloudinary": "^2.7.0",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.10.0",
-    "mongoose": "^8.9.2",
+    "mongoose": "^6.13.8",
     "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
     "nodemailer": "^6.10.1",
